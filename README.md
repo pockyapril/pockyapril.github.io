@@ -1,1 +1,1 @@
-For DIGS 30005 Submission :)
+For DIGS 30005 Submissions
