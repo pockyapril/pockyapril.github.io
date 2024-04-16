@@ -1,3 +1,4 @@
+/* DRAFT 1 MANY BUGS
 .root{
     --size-header: 2.25rem;
     --size-accordion-title: 1.25rem;
@@ -89,7 +90,11 @@ h1{
 
 
 
+
+
+
 /* Navbar */
+/* DRAFT 2 MANY BUGS
 .navbar {
     background-color: maroon;
     padding-top: 0.5rem;
@@ -170,3 +175,4 @@ h1{
     background-color: #953b39;
     border-radius: 5px;
 }
+

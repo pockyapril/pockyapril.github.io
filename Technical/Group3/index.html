@@ -178,68 +178,57 @@
         <li><a class="dropdown-item" href="#">Dropdown link</a></li>
     </ul>
     </div>
-    <div class="btn-group dropstart" role="group">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropleft
-        </button>
-    <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Dropdown Links</a></li>
-        <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-    </ul>
-    </div>
+
     <div class="btn-group dropend" role="group">
     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
     aria-expanded="false">
         Dropright 
     </button>
     <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+    <li><a class="dropdown-item" href="#">Dropright link</a></li>
+    <li><a class="dropdown-item" href="#">Dropright link</a></li>
     </ul>
     </div>
     </div>
 
-
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-    
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Images/1.jpg" alt="Scottie 1">
-                <div class="carousel-caption">
-                    <h3>Scottie on Fallen Leaves</h3>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="Images/2.jpg" alt="Scottie 2">
-                <div class="carousel-caption">
-                    <h3>Scottie on Grass</h3>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="Images/3.jpg" alt="Scottie 3">
-                <div class="carousel-caption">
-                    <h3>Scotties around Flowers</h3>
-                </div>
+<!-- Carousels -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <!-- Wrapper -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Images/1.jpg" class="d-block w-100" alt="Norwegian Forest Cat">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Scottie on Fallen Leaves</h3>
             </div>
         </div>
-    
-        <!-- Left and Right Controls -->
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
+        <div class="carousel-item">
+            <img src="Images/2.jpg" class="d-block w-100" alt="Ragdoll">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Scottie on Grass</h3>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Images/3.jpg" class="d-block w-100" alt="Siberian Forest Cat">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Scotties around Flowers</h3>
+            </div>
+        </div>
     </div>
-
+<!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 </body>
 </html>
