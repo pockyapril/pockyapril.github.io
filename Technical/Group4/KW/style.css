@@ -1,0 +1,39 @@
+/* Player */
+.player {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.playlist {
+    list-style-type: none;
+    padding: 0;
+}
+.playlist li {
+    cursor: pointer;
+    padding: 5px 0;
+}
+.playlist li.active {
+    font-weight: bold;
+}
+
+
+
+
+
+/* Buttons */
+.button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:focus {
+    outline: none;
+}
