@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Question</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="trivia">
+        <p>Trivia question</p>
+        <div id="question">Q: What is the capital of France?</div>
+        <input type="text" id="trivia-answer" placeholder="Your answer">
+        <button onclick="checkTriviaAnswer()">Submit</button>
+        <div id="trivia-result"></div>
+    </div>
+
+    <div id="number">
+        <p>Enter a 5-digit number like 12345.</p>
+        <input type="number" id="number-input" placeholder="5-digit number">
+        <button onclick="checkNumber()">Submit</button>
+        <div id="number-result"></div>
+    </div>
+</body>
+</html>

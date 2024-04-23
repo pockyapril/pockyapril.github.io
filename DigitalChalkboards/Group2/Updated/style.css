@@ -25,7 +25,12 @@ input {
     font-size: 16px;
 }
 
-#trivia-response, #output {
+#trivia-result, #number-result {
     margin-top: 10px;
     font-weight: bold;
+    color:black;
+}
+
+#trivia {
+    padding-bottom: 30px;
 }
