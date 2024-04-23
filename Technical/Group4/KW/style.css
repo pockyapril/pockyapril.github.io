@@ -21,6 +21,7 @@
 }
 
 
+/* Genaral page design */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #F4F7F6;
@@ -41,7 +42,7 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Noq playing title */
+/* Now playing title */
 #nowPlaying {
     font-size: 1.2em;
     color: #111148;
