@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Trivia event handling
     const triviaInput = document.getElementById('trivia-answer');
     triviaInput.addEventListener('keypress', function(event) {
         if (event.key === "Enter") {
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const triviaButton = document.getElementById('trivia-submit');
     triviaButton.addEventListener('click', handleTrivia);
 
-    // Number check event handling
     const numberInput = document.getElementById("numberInput");
     numberInput.addEventListener('keypress', function(event) {
         if (event.key === "Enter") {
@@ -24,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function handleTrivia() {
     const answer = document.getElementById('trivia-answer').value.trim().toLowerCase();
     const responseElement = document.getElementById('trivia-response');
-    const correctAnswer = "paris"; // Assuming the answer is "Paris"
+    const correctAnswer = "paris";
     if (answer === correctAnswer) {
         responseElement.textContent = `Correct! You guessed ${answer}`;
     } else {
