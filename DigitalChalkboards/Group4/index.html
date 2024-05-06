@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="">
+    </script>
+    <title>Digital Chalkboard 7</title>
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Digital Chalkboard Week 7: Map</h2>
+    <h4>Manhattan Map</h4>
+    <div id="map"></div>
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([51.505, -0.09], 13);
+
+        // Add the base map layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add a marker for Gopchang Story
+        var marker = L.marker([40.74722885454404, -73.98556703643243]).addTo(map);
+
+        // Add a circle near the Empire State Building
+        var circle = L.circle([40.74861115877547, -73.98566440373617], {
+            color: 'blue',
+            fillColor: '#30f',
+            fillOpacity: 0.3,
+            radius: 300
+        }).addTo(map);
+
+        // Add a polygon highlighting the Central Park
+        var polygon = L.polygon([
+            [40.800601, -73.958181],
+            [40.796851, -73.949475],
+            [40.764712, -73.973246],
+            [40.768283, -73.981855]  
+        ]).addTo(map);
+
+        // Add pop-ups to the marker, circle, and polygon
+        marker.bindPopup("<b>Welcome!</b><br>Here is Gopchang Story Korean BBQ Restaurant.");
+        circle.bindPopup("<b>You are in the Empire State Building area.").openPopup();
+        polygon.bindPopup("Central Park");
+    </script>
+</body>
+</html>
