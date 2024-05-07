@@ -1,0 +1,60 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark gray text for general readability */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #800000; /* Maroon background for navbar */
+    border-bottom: 2px solid #400000; /* Dark maroon for contrast */
+}
+
+.nav-link {
+    color: #ffffff; /* White text for readability */
+    font-weight: bold;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #ffd700; /* Gold color on hover for a regal look */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    background-color: #800000;
+    border: none;
+}
+
+.dropdown-item {
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #600000; /* Darker shade of maroon on hover */
+}
+
+/* Content styles */
+#ochreContainer {
+    background-color: #e0e0e0; /* Light gray background for sections */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #800000; /* Maroon color for headings */
+}
+
+table {
+    width: 100%;
+    background-color: #ffffff; /* White background for tables */
+    color: #000000; /* Black text for table contents */
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #cccccc; /* Light gray borders */
+}
