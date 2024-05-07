@@ -27,15 +27,23 @@ function loadSecondItem(uuid) {
 function requestXML(link, callback) {
     var connect = new XMLHttpRequest();
     connect.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            callback(this.responseXML);
+        if (this.readyState == 4) {
+            if (this.status == 200) {
+                callback(this.responseXML, link);
+            } else {
+                console.error('Failed to fetch XML:', this.statusText);
+            }
         }
+    };
+    connect.onerror = function() {
+        console.error('XML request encountered a network error.');
     };
     connect.open("GET", link, true);
     connect.send();
     console.log('Request sent for:', link);
 }
 
+// Fetch information for the first item
 function parseFirstItemXML(sourceXML) {
     var textTitle = sourceXML.getElementsByTagName('identification');
     var title_string = document.createTextNode(textTitle[1].textContent);
@@ -64,16 +72,21 @@ function parseFirstItemXML(sourceXML) {
     }
 }
 
+// Fetch image for the second item
 function parseSecondItemXML(sourceXML, link) {
     var textTitle = sourceXML.getElementsByTagName('identification');
-    var title_string = document.createTextNode(textTitle[1].textContent);
-    document.getElementById('title').appendChild(title_string);
+    if (textTitle.length > 0) {
+        var title_string = document.createTextNode(textTitle[1].textContent);
+        document.getElementById('title').appendChild(title_string);
+    }
 
-    if (sourceXML.getElementsByTagName('resource')[0].getAttribute("format") == 'image/jpeg') {
+    var resources = sourceXML.getElementsByTagName('resource');
+    if (resources.length > 0 && resources[0].getAttribute("format") === 'image/jpeg') {
         var img = document.createElement('img');
-        var src = link + "&preview";
+        var src = link + "&preview"; 
         img.src = src;
         document.getElementById('preview').appendChild(img);
-      }
+    }
 }
+
 
