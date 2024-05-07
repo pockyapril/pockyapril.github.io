@@ -1,4 +1,4 @@
-// Base
+// Base to load the documents
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('ochreContainer');
     const uuid = container.getAttribute('data-uuid');
@@ -24,6 +24,7 @@ function loadSecondItem(uuid) {
     console.log('Loading data for second item');
 }
 
+// Fetch XML data from the links
 function requestXML(link, callback) {
     var connect = new XMLHttpRequest();
     connect.onreadystatechange = function() {
@@ -44,6 +45,7 @@ function requestXML(link, callback) {
 }
 
 // Fetch information for the first item
+// Update the webpage with the info
 function parseFirstItemXML(sourceXML) {
     var textTitle = sourceXML.getElementsByTagName('identification');
     var title_string = document.createTextNode(textTitle[1].textContent);
@@ -52,13 +54,13 @@ function parseFirstItemXML(sourceXML) {
     if (sourceXML.getElementsByTagName('property').length > 0) {
         const properties = sourceXML.querySelectorAll('property');
         let i = 0;
-        properties.forEach(p => {
-            var tr = document.createElement('tr');
+        properties.forEach(p => { // Iterates over the properties
+            var tr = document.createElement('tr'); // Create a new table row for each element
             tr.setAttribute('class', 'ochreTableRows');
-            tr.setAttribute('id', 'row_' + i);
+            tr.setAttribute('id', 'row_' + i); // "i" is used to ensure that each row has a unique ID
             document.getElementById('ochreTableBody').appendChild(tr);
 
-            var property = document.createElement('td');
+            var property = document.createElement('td'); // Table data
             property.setAttribute('id', 'property_' + i);
             property.textContent = p.querySelector('string').textContent;
             document.getElementById('row_' + i).appendChild(property);
@@ -73,6 +75,7 @@ function parseFirstItemXML(sourceXML) {
 }
 
 // Fetch image for the second item
+// Update the webpage with the image
 function parseSecondItemXML(sourceXML, link) {
     var textTitle = sourceXML.getElementsByTagName('identification');
     if (textTitle.length > 0) {
