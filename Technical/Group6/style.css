@@ -1,23 +1,23 @@
 /* General body styles */
 body {
     font-family: 'Arial', sans-serif;
-    color: #333; /* Dark gray text for general readability */
-    background-color: #f4f4f4; /* Light gray background */
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 /* Navbar styles */
 .navbar {
-    background-color: #800000; /* Maroon background for navbar */
-    border-bottom: 2px solid #400000; /* Dark maroon for contrast */
+    background-color: #800000;
+    border-bottom: 2px solid #400000;
 }
 
 .nav-link {
-    color: #ffffff; /* White text for readability */
+    color: #ffffff; 
     font-weight: bold;
 }
 
 .nav-link:hover, .nav-link:focus {
-    color: #ffd700; /* Gold color on hover for a regal look */
+    color: #ffd700;
 }
 
 /* Dropdown menu styles */
@@ -32,29 +32,29 @@ body {
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
-    background-color: #600000; /* Darker shade of maroon on hover */
+    background-color: #600000;
 }
 
 /* Content styles */
 #ochreContainer {
-    background-color: #e0e0e0; /* Light gray background for sections */
+    background-color: #e0e0e0;
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
 }
 
 h1 {
-    color: #800000; /* Maroon color for headings */
+    color: #800000;
 }
 
 table {
     width: 100%;
-    background-color: #ffffff; /* White background for tables */
-    color: #000000; /* Black text for table contents */
+    background-color: #ffffff;
+    color: #000000;
     border-collapse: collapse;
 }
 
 td, th {
     padding: 10px;
-    border: 1px solid #cccccc; /* Light gray borders */
+    border: 1px solid #cccccc;
 }

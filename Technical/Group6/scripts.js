@@ -64,15 +64,16 @@ function parseFirstItemXML(sourceXML) {
     }
 }
 
-function parseSecondItemXML(sourceXML) {
+function parseSecondItemXML(sourceXML, link) {
     var textTitle = sourceXML.getElementsByTagName('identification');
     var title_string = document.createTextNode(textTitle[1].textContent);
     document.getElementById('title').appendChild(title_string);
 
-    if (sourceXML.getElementsByTagName('source')[0].getAttribute("format") == 'image/jpeg') {
+    if (sourceXML.getElementsByTagName('resource')[0].getAttribute("format") == 'image/jpeg') {
         var img = document.createElement('img');
         var src = link + "&preview";
         img.src = src;
         document.getElementById('preview').appendChild(img);
-    }
-};
+      }
+}
+
