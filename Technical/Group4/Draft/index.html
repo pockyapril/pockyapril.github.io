@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.4/dist/howler.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col text-center">
+                <button id="button1" class="btn btn-danger">Play Song</button>
+            </div>
+            <div class="col text-center">
+                <button id="button2" class="btn btn-primary">Play/Pause</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="music-player">
+            <div id="title">
+                <span id="track"></span>
+                <div id="timer">0:00</div>
+                <div id="duration">0:00</div>
+            </div>
+
+            <div class="controlsOuter">
+                <div class="controlsInner">
+                    <div id="loading"></div>
+                    <button class="btn" id="playBtn">Play</button>
+                    <button class="btn" id="pauseBtn">Pause</button>
+                    <button class="btn" id="prevBtn">Prev</button>
+                    <button class="btn" id="nextBtn">Next</button>
+                </div>
+            </div>
+
+            <div id="playlist">
+                <div id="list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="player.js"></script>
+</body>
+</html>

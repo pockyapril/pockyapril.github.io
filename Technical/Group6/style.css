@@ -5,36 +5,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Navbar styles */
-.navbar {
-    background-color: #800000;
-    border-bottom: 2px solid #400000;
-}
-
-.nav-link {
-    color: #ffffff; 
-    font-weight: bold;
-}
-
-.nav-link:hover, .nav-link:focus {
-    color: #ffd700;
-}
-
-/* Dropdown menu styles */
-.dropdown-menu {
-    background-color: #800000;
-    border: none;
-}
-
-.dropdown-item {
-    color: #ffffff;
-    transition: background-color 0.3s ease;
-}
-
-.dropdown-item:hover, .dropdown-item:focus {
-    background-color: #600000;
-}
-
 /* Content styles */
 h1 {
     color: #800000;

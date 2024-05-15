@@ -7,45 +7,14 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <title>Week 7 Technical</title>
 </head>
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnical" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Technical Assignments
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnical">
-                        <a class="dropdown-item" href="/ta01">Technical Assignment 01</a>
-                        <a class="dropdown-item" href="/ta02">Technical Assignment 02</a>
-                        <a class="dropdown-item" href="/ta03">Technical Assignment 03</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDigital" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Digital Chalkboard
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownDigital">
-                        <a class="dropdown-item" href="/dc01">Digital Chalkboard 01</a>
-                        <a class="dropdown-item" href="/dc02">Digital Chalkboard 02</a>
-                        <a class="dropdown-item" href="/dc03">Digital Chalkboard 03</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!--Navbar and Footer-->
+    <div id="nav-placeholder"></div>   
+    <div id="footer-placeholder"></div>
+
     
     <!--Example 1-->
     <h2>OCHRE API Example 1</h2>
@@ -59,6 +28,12 @@
     <!--Link JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#nav-placeholder").load("../../tech_nav.html")
+            $("#footer-placeholder").load("../../footer.html");
+        });
+        </script>
     
 </body>
 </html>
