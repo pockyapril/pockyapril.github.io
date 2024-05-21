@@ -3,68 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-    crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e5f5;
+            color: #42127c;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #a548df;
+        }
+        .navbar-nav .nav-link, .dropdown-menu .dropdown-item {
+            color: white !important;
+        }
+        .dropdown-menu {
+            background-color: #815dd4;
+        }
+        .nav-link:hover, .dropdown-item:hover {
+            background-color: #701ed3;
+        }
+    </style>
     <title>Navbar</title>
 </head>
 <body>
  <!--Navbar-->
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnical" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Technical Assignments
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnical">
-                    <a class="dropdown-item" href="/Technical/Group1/index.html">Technical Assignment 01</a>
-                    <a class="dropdown-item" href="/Technical/Group2/Week3.html">Technical Assignment 02</a>
-                    <a class="dropdown-item" href="/Technical/Group3/index.html">Technical Assignment 03</a>
-                    <a class="dropdown-item" href="/Technical/Group4/KW/index.html">Technical Assignment 04</a>
-                    <a class="dropdown-item" href="/Technical/Group5/charts.html">Technical Assignment 05</a>
-                    <a class="dropdown-item" href="/Technical/Group6/index1.html">Technical Assignment 06-1</a>
-                    <a class="dropdown-item" href="/Techinical/Group6/index2.html">Technical Assignment 06-2</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDigital" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Digital Chalkboard
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownDigital">
-                    <a class="dropdown-item" href="../Group1/index.html">Digital Chalkboard 01</a>
-                    <a class="dropdown-item" href="../Group2/Updated/index.html">Digital Chalkboard 02</a>
-                    <a class="dropdown-item" href="../Group3/KW/index.html">Digital Chalkboard 03</a>
-                    <a class="dropdown-item" href="../Group4/index.html">Digital Chalkboard 04</a>
-                    <a class="dropdown-item" href="../Group5/music.html">Digital Chalkboard 05</a>
-                    <a class="dropdown-item" href="../Group6/index1.html">Digital Chalkboard 06</a>
-                    <a class="dropdown-item" href="../Group7/Week3.html">Digital Chalkboard 07</a>
-                </div>
-            </li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnical" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Technical Assignments
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownTechnical">
+                        <li><a class="dropdown-item" href="/Technical/Group1/index.html">Technical Assignment 01</a></li>
+                        <li><a class="dropdown-item" href="/Technical/Group2/Week3.html">Technical Assignment 02</a></li>
+                        <li><a class="dropdown-item" href="/Technical/Group3/index.html">Technical Assignment 03</a></li>
+                        <li><a class="dropdown-item" href="/Technical/Group4/index.html">Technical Assignment 04</a></li>
+                        <li><a class="dropdown-item" href="/Technical/Group5/charts.html">Technical Assignment 05</a></li>
+                        <li><a class="dropdown-item" href="/Technical/Group6/index1.html">Technical Assignment 06-1</a></li>
+                        <li><a class="dropdown-item" href="/Technical/Group6/index2.html">Technical Assignment 06-2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDigital" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Digital Chalkboard
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownDigital">
+                        <li><a class="dropdown-item" href="../Group1/index.html">Digital Chalkboard 01</a></li>
+                        <li><a class="dropdown-item" href="../Group2/index.html">Digital Chalkboard 02</a></li>
+                        <li><a class="dropdown-item" href="../Group3/index.html">Digital Chalkboard 03</a></li>
+                        <li><a class="dropdown-item" href="../Group4/index.html">Digital Chalkboard 04</a></li>
+                        <li><a class="dropdown-item" href="../Group5/music.html">Digital Chalkboard 05</a></li>
+                        <li><a class="dropdown-item" href="../Group6/index1.html">Digital Chalkboard 06-1</a></li>
+                        <li><a class="dropdown-item" href="../Group6/404.html">Digital Chalkboard 06-2</a></li>
+                        <li><a class="dropdown-item" href="../Group7/Week3.html">Digital Chalkboard 07</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
-
-    <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"
-></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"
-></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
 </body>
 </html>
+
+

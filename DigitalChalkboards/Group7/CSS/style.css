@@ -11,7 +11,10 @@ table {
 .c{list-style-type: lower-alpha;}
 .d{list-style-type: "$";}
 
-a.nav{text-decoration: none;}
+nav {
+    position: relative;
+    z-index: 1000;
+}
 
 a#not-nav:link{color:hotpink;}
 
@@ -27,4 +30,8 @@ h1::first-letter{
 li::first-letter{
     font-size:25px;
     font-weight: bold;
+}
+
+body {
+    padding-bottom: 100px;
 }

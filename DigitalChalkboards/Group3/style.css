@@ -14,20 +14,12 @@ h3 {
     padding-bottom: 5px;
 }
 
-/* Button */
-button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* Main Content Styles */
+#main-content {
+    padding-bottom: 80px;
 }
 
-
-/* div */
-div {
+#main-content div {
     margin-top: 10px;
     padding: 10px;
     background-color: white;
@@ -35,9 +27,7 @@ div {
     border-radius: 5px;
 }
 
-
-
-#displayArea ul{
+#displayArea ul {
     list-style-type: none;
     padding: 0;
 }
